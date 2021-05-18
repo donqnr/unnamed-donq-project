@@ -1,0 +1,13 @@
+switch CGSWC01A on sound Switch1 pic CGSWC01B tics 0
+switch CGSWC01B off sound Switch2 pic CGSWC01A tics 0
+
+switch CGSWC02A on sound Switch1 pic CGSWC02B tics 0
+switch CGSWC02B off sound Switch2 pic CGSWC02A tics 0
+
+switch CGSWC03A on sound Switch1 pic CGSWC03B tics 0
+switch CGSWC03B off sound Switch2 pic CGSWC03A tics 0
+
+switch DRSWC10A on sound Switch1 pic DRSWC10B tics 0
+switch DRSWC10B off sound Switch2 pic DRSWC10A tics 0
+
+cameratexture TCAMTEX1 256 256 fit 64 64

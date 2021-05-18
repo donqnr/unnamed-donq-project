@@ -1,0 +1,186 @@
+StatusBar FullScreen, fullscreenoffsets,forcescaled
+{
+	DrawNumber 3, BIGFONT, Green, Health, alignment(center), -100 + center, 90 + center, 0, Red, 30;
+	DrawString SMALLFONT, Red, "Health", -100 + center, 105 + center, 0,alignment(center);
+	DrawNumber 3, BIGFONT, Grey, Armor, alignment(center), -120 + center, 65 + center;
+	DrawString SMALLFONT, Grey, "Armor", -120 + center, 80 + center, 0,alignment(center);
+	DrawKeyBar 7, horizontal, 8, 32, 16;
+	DrawSelectedInventory alwaysshowcounter, SMALLFONT, -60 + center, 85 + center, -30 + center, 105 + center, white;
+	
+	InInventory EnviroShield
+	{
+		DrawNumber 3, BIGFONT, DarkGreen, "EnviroShield", whennotzero, alignment(center), 40 + center, 90 + center;
+		DrawString SMALLFONT, DarkGreen, "Env-", 40 + center, 105 + center, 0,alignment(center);
+		DrawString SMALLFONT, DarkGreen, "Shield", 40 + center, 112 + center, 0,alignment(center);
+	}
+	
+	// Ammo counters for each weapon because sbarinfo is limited and i dunno how to do this with zscript
+	
+	IsSelected DKPistol
+	{
+		DrawNumber 3, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;  //Ammo Count
+		DrawString SMALLFONT, Yellow, "9mm", 105 + center, 105 + center, 0,alignment(center); //Ammo Type
+	}
+	IsSelected DKPistol, MachinePistol
+	{
+		DrawNumber 3, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+		DrawString SMALLFONT, Yellow, "9mm", 105 + center, 105 + center, 0,alignment(center);
+	}
+	IsSelected DKShotgun
+	{
+	
+		//If player is using special ammo, the special ammo counter is yellow while regular ammo is black
+	
+		InInventory UsingDB 
+		{
+			DrawNumber 3, BIGFONT, Black, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Black, "12GA Buck", 105 + center, 105 + center, 0,alignment(center);
+			DrawNumber 3, BIGFONT, Yellow, Ammo2, alignment(center), 120 + center, 65 + center;
+			DrawString SMALLFONT, Yellow, "12GA DB", 120 + center, 80 + center, 0,alignment(center);
+			
+			//Else it'll be the other way around
+			
+		} else { 
+			DrawNumber 3, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Yellow, "12GA Buck", 105 + center, 105 + center, 0,alignment(center);
+			
+			//Only show special ammo count when the player has any in his inventory and isn't being selected.
+			
+			InInventory DragonsBreath, 1 	
+			{
+				DrawNumber 3, BIGFONT, Black, Ammo2, alignment(center), 120 + center, 65 + center;
+				DrawString SMALLFONT, Black, "12GA DB", 120 + center, 80 + center, 0,alignment(center);
+			}
+		}
+	}
+	
+	
+	IsSelected SupaShotgun
+	{
+		InInventory UsingSupaDB
+		{
+			DrawNumber 3, BIGFONT, Black, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Black, "12GA Buck", 105 + center, 105 + center, 0,alignment(center);
+			DrawNumber 3, BIGFONT, Yellow, Ammo2, alignment(center), 120 + center, 65 + center;
+			DrawString SMALLFONT, Yellow, "12GA DB", 120 + center, 80 + center, 0,alignment(center);
+		} else {
+			DrawNumber 3, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Yellow, "12GA Buck", 105 + center, 105 + center, 0,alignment(center);
+			InInventory DragonsBreath, 1
+			{
+				DrawNumber 3, BIGFONT, Black, Ammo2, alignment(center), 120 + center, 65 + center;
+				DrawString SMALLFONT, Black, "12GA DB", 120 + center, 80 + center, 0,alignment(center);
+			}
+		}
+	}
+	IsSelected AutoShotgun
+	{
+		InInventory UsingATDB
+		{
+			DrawNumber 3, BIGFONT, Black, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Black, "12GA Buck", 105 + center, 105 + center, 0,alignment(center);
+			DrawNumber 3, BIGFONT, Yellow, Ammo2, alignment(center), 120 + center, 65 + center;
+			DrawString SMALLFONT, Yellow, "12GA DB", 120 + center, 80 + center, 0,alignment(center);
+		} else {
+			DrawNumber 3, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Yellow, "12GA Buck", 105 + center, 105 + center, 0,alignment(center);
+			InInventory DragonsBreath, 1
+			{
+				DrawNumber 3, BIGFONT, Black, Ammo2, alignment(center), 120 + center, 65 + center;
+				DrawString SMALLFONT, Black, "12GA DB", 120 + center, 80 + center, 0,alignment(center);
+			}
+		}
+	}
+	
+	IsSelected DKMachineGun
+	{
+		InInventory UsingRip
+		{
+			DrawNumber 3, BIGFONT, Black, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Black, "7.62 FMJ", 105 + center, 105 + center, 0,alignment(center);
+			DrawNumber 3, BIGFONT, Yellow, Ammo2, alignment(center), 120 + center, 65 + center;
+			DrawString SMALLFONT, Yellow, "7.62 Ripper", 120 + center, 80 + center, 0,alignment(center);
+		} else {
+			DrawNumber 3, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Yellow, "7.62 FMJ", 105 + center, 105 + center, 0,alignment(center);
+			InInventory SevenSixTwoRipper, 1
+			{
+				DrawNumber 3, BIGFONT, Black, Ammo2, alignment(center), 120 + center, 65 + center;
+				DrawString SMALLFONT, Black, "7.62 Ripper", 120 + center, 80 + center, 0,alignment(center);
+			}
+		}
+	}
+	IsSelected DKMissileLauncher
+	{
+		InInventory UsingHoming
+		{
+			DrawNumber 3, BIGFONT, Black, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Black, "Missile", 105 + center, 105 + center, 0,alignment(center);
+			DrawNumber 3, BIGFONT, Yellow, Ammo2, alignment(center), 120 + center, 65 + center;
+			DrawString SMALLFONT, Yellow, "Homing", 120 + center, 80 + center, 0,alignment(center);
+		} else {
+			DrawNumber 3, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Yellow, "Missile", 105 + center, 105 + center, 0,alignment(center);
+			InInventory HomingMMissiles, 1
+			{
+				DrawNumber 3, BIGFONT, Black, Ammo2, alignment(center), 120 + center, 65 + center;
+				DrawString SMALLFONT, Black, "Homing", 120 + center, 80 + center, 0,alignment(center);
+			}
+		}
+	}
+		IsSelected NadeLauncher
+	{
+		InInventory UsingPhosphor
+		{
+			DrawNumber 3, BIGFONT, Black, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Black, "Cluster", 105 + center, 105 + center, 0,alignment(center);
+			DrawNumber 3, BIGFONT, Yellow, Ammo2, alignment(center), 120 + center, 65 + center;
+			DrawString SMALLFONT, Yellow, "Phosphorous", 120 + center, 80 + center, 0,alignment(center);
+		} else {
+			DrawNumber 3, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+			DrawString SMALLFONT, Yellow, "Cluster", 105 + center, 105 + center, 0,alignment(center);
+			InInventory PhosphorGrenade, 1
+			{
+				DrawNumber 3, BIGFONT, Black, Ammo2, alignment(center), 120 + center, 65 + center;
+				DrawString SMALLFONT, Black, "Phosphorous", 120 + center, 80 + center, 0,alignment(center);
+			}
+		}
+	}
+	IsSelected PlasmaCannon
+	{
+		DrawNumber 3, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+		DrawString SMALLFONT, Yellow, "Plasma", 105 + center, 105 + center, 0,alignment(center);
+	}
+	IsSelected DKFlamethrower
+	{
+		DrawNumber 3, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+		DrawString SMALLFONT, Yellow, "Fuel", 105 + center, 105 + center, 0,alignment(center);
+	}
+	IsSelected DKMinigun
+	{
+		DrawNumber 4, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+		DrawString SMALLFONT, Yellow, "5.56 FMJ", 105 + center, 105 + center, 0,alignment(center);
+	}
+	IsSelected RailGun
+	{
+		DrawNumber 4, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+		DrawString SMALLFONT, Yellow, "Slug", 105 + center, 105 + center, 0,alignment(center);
+	}
+	IsSelected ClusterFucker6000
+	{
+		DrawNumber 4, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+		DrawString SMALLFONT, Yellow, "CF6000 Cell", 105 + center, 105 + center, 0,alignment(center);
+	}
+	IsSelected MagnumRevolver
+	{
+		DrawNumber 4, BIGFONT, Yellow, Ammo1, alignment(center), 105 + center, 90 + center;
+		DrawString SMALLFONT, Yellow, "357. Magnum", 105 + center, 105 + center, 0,alignment(center);
+	}
+}
+
+//kill me
+
+StatusBar InventoryFullscreen, fullscreenoffsets, forcescaled
+{
+	DrawInventoryBar Doom, noartibox, alwaysshow, alwaysshowcounter, 6, SMALLFONT, -65 + center, -96 + center, -40 + center, -74 + center, white;
+}

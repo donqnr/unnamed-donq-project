@@ -1,0 +1,7 @@
+Lock 7
+{
+	GreenCard
+	Message "You need a green card to open this door"
+	RemoteMessage "You need a green card to activate this object"
+	Mapcolor 0 255 0
+}

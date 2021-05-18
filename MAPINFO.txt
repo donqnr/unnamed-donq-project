@@ -1,0 +1,285 @@
+clearepisodes
+clearskills
+
+skill babby
+{
+   AmmoFactor = 2
+   DamageFactor = 0.5
+   EasyBossBrain
+   SpawnFilter = Baby
+   Name = "Super Babby Mode"
+   Aggressiveness = 0.25
+   
+}
+
+skill eesy
+{
+	SpawnFilter = Easy
+	Name = "Walk in the Park"
+	Aggressiveness = 0.4
+}
+
+skill normal
+{
+	SpawnFilter = normal
+	Name = "Regular Bloodshed"
+	Aggressiveness = 0.5
+}
+
+skill hard
+{
+	SpawnFilter = hard
+	Name = "Total Carnage"
+	Aggressiveness = 0.5
+}
+
+skill nightmare
+{
+   AmmoFactor = 2
+   FastMonsters
+   DisableCheats
+   RespawnTime = 16
+   SpawnFilter = Nightmare
+   Name = "Certain Death"
+   MustConfirm = "Your funeral."
+   Aggressiveness = 0.5
+}
+
+skill cbt
+{
+	DamageFactor = 2
+	FastMonsters
+	DisableCheats
+	RespawnTime = 8
+	SpawnFilter = 6
+	Name = "CBT Mode"
+	MustConfirm = "ahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha no."
+	Aggressiveness = 0.7
+	NoPain
+	MonsterHealth = 2
+	NoMenu
+}
+
+
+episode "DE1M1"
+{
+name = "Demon Invasion"
+}
+episode "DE2M1"
+{
+name = "Earth Under Siege"
+optional
+}
+episode "DE3M1"
+{
+name = "Arctic Base"
+optional
+}
+episode "DE4M1"
+{
+name = "Realm of Suffering"	
+optional
+}
+
+gameinfo
+{
+	weaponslot = 1, "Wrench"
+	weaponslot = 2, "DKPistol", "MagnumRevolver", "MachinePistol"
+	weaponslot = 3, "DKShotgun", "SupaShotgun"
+	weaponslot = 4, "DKMinigun", "DKMachineGun"
+	weaponslot = 5, "DKMissileLauncher"
+	weaponslot = 6, "Railgun"
+	weaponslot = 7, "DKFlamethrower"
+	weaponslot = 8, "ClusterFucker6000"
+	intermissionmusic = "NINTH"
+}
+
+// bunch of damage types for monster to prevent unwanted infighting and self damage
+
+DamageType MangabushFlame
+{
+	Factor = 1
+	ReplaceFactor
+}
+
+DamageType MangabushDmg
+{
+	Factor = 1
+	ReplaceFactor
+}
+
+DamageType BaronDmg
+{
+	Factor = 1
+	ReplaceFactor
+}
+
+DamageType ImpDmg
+{
+	Factor = 1
+	ReplaceFactor
+}
+
+DamageType CacoDmg
+{
+	Factor = 1
+	ReplaceFactor
+}
+
+DamageType PinkieDmg
+{
+	Factor = 1
+	ReplaceFactor
+}
+
+DamageType RevDmg
+{
+	Factor = 1
+	ReplaceFactor
+}
+
+// damage types for being set on fire
+
+DamageType Ignite
+{
+	Factor = 1
+	ReplaceFactor
+}
+
+DamageType OnFire
+{
+	Factor = 1
+	ReplaceFactor
+}
+
+
+
+DoomEdNums
+{
+	15001 = dkpistol
+	15002 = DKShotgun
+	15003 = DKMachineGun
+	15004 = SupaShotgun
+	15005 = DKMissileLauncher
+	15006 = DKFlamethrower
+	15007 = DKMinigun
+	15009 = ClusterFucker6000
+	15010 = RailGun
+	15011 = NadeLauncher
+	15012 = MagnumRevolver
+	15013 = MachinePistol
+
+
+	15101 = Ninemm
+	15102 = Buckshot
+	15103 = BuckshotLarge
+	15104 = SevenSixTwo
+	15105 = SevenSixTwoLarge
+	15106 = FiveFiveSix
+	15107 = FiveFiveSixLarge
+	15108 = MMissiles
+	15109 = MMissilesLarge
+	15112 = FlamerFuel
+	15113 = FlamerFuelLarge
+	15114 = CFCell
+	15115 = DragonsBreath
+	15116 = DragonsBreathLarge
+	15117 = SevenSixTwoRipper
+	15118 = SevenSixTwoRipperLarge
+	15119 = HomingMMissiles
+	15120 = HomingMMissilesLarge
+	15121 = ClusterGrenade
+	15122 = PhosphorGrenade
+	15123 = RailSlugs
+	15124 = MagnumRounds
+
+
+	15201 = ARDude
+	15202 = SMGDude
+	15203 = SGDude
+	15204 = MinigunDude
+	15205 = ImpDude
+	15206 = Mangabush
+	15207 = BloodDemon 
+	15208 = FlyingZombie
+	15209 = BaronDude
+	15210 = HellNite
+	15211 = Cybruiser
+	
+	15301 = Stim
+	15302 = Vest
+	
+	15400 = GreenCard
+}
+
+// Episode 1
+
+map DE1M1 "some base thing"
+{
+	levelnum = 1
+	sky1 = "AAASKY", 0
+	next = "DE1M2"
+	music = "BROKENMD"
+}
+map DE1M2 "Techbase #875672"
+{
+	levelnum = 2
+	sky1 = "AAASKY", 0
+	next = "DE1M3"
+	music = "DIMNSION"
+}
+map DE1M3 "Waste Processing"
+{
+	levelnum = 3
+	sky1 = "AAASKY", 0
+	next = "DE1M4"
+	music = "MILITARY"
+}
+map DE1M4 "Weapon Research Facility"
+{
+	levelnum = 4
+	sky1 = "AAASKY", 0
+	next = "DE1M5"
+	music = "CYBATWAR"
+}
+
+map DE1M5 "Comm-Tower"
+{
+	levelnum = 5
+	sky1 = "AAASKY", 0
+	next = "DE1M6"
+}
+
+map DE1M6 "Super Cyberdemon"
+{
+	levelnum = 6
+	sky1 = "AAASKY", 0
+	next = endsequence, "ep1end"
+}
+
+//Episode 2
+
+map DE2M1 "Outskirts"
+{
+	levelnum = 6
+	sky1 = "ARES", 0
+	music = "ARCHNIDS"
+}
+
+intermission ep1end
+{
+	textscreen
+	{
+		background = "CGFLAT05" ,1
+		music = "MILITARY"
+		Text = " It looks like I'm the sole survivor. \n All my attempts to contact the outside world have failed. \n", 
+		" My only option it seems is to escape and get \n back to civilization, and get into contact with other survivors. \n",
+		" It'll be a long way to the nearest city, \n surely they have the situation under control out there. \n",
+		" (Episode still WIP, more maps to come probably.)"
+	}
+	wiper { wipetype = melt }
+	Image 
+	{
+		background = "END"
+	}
+}

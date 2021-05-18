@@ -1,0 +1,223 @@
+Skybox AAASKY fliptop
+{
+  AAASKY_N
+  AAASKY_E
+  AAASKY_S
+  AAASKY_W
+  AAASKY_T
+  AAASKY_B
+}
+
+Skybox CTYSKY fliptop
+{
+	CTYSKY_N
+	CTYSKY_E
+	CTYSKY_S
+	CTYSKY_W
+	CTYSKY_T
+	CTYSKY_B
+}
+
+Skybox ARES fliptop
+{
+  ares_ft
+  ares_lf
+  ares_bk
+  ares_rt
+  ares_up
+  ares_dn
+}
+
+pointlight BooletLight
+{
+	color 255 165 0
+	size 8
+	attenuate 1
+}
+pulselight BooletLight1
+{
+	color 255 165 0
+	size 8
+	secondarysize 0
+	interval 0.5
+}
+pointlight MMissileLight
+{
+	color 150 70 0
+	size 12
+}
+pointlight MMissileExplLight1
+{
+	color 75 35 0
+	size 16
+}
+pointlight MMissileExplLight2
+{
+	color 37 18 0
+	size 24
+}
+pointlight MMissileExplLight3
+{
+	color 17 9 0
+	size 32
+}
+pointlight CFLight
+{
+	color 0 255 0
+	size 64
+}
+pointlight CFCLight
+{
+	color 0 255 0
+	size 20
+}
+pointlight flameprojlight
+{
+	Color 255 165 0
+	size 32
+}
+pulselight flamelight
+{
+	Color 200 20 0
+	size 80
+	secondarysize 74
+	interval 0.1
+ }
+ 
+pointlight NadeClusterLight1
+{
+	color 150 70 0
+	size 24
+}
+
+pointlight NadeClusterLight2
+{
+	color 75 35 0
+	size 24
+}
+
+pointlight NadeLight1
+{
+	color 150 70 0
+	size 32
+}
+
+pointlight NadeLight2
+{
+	color 75 35 0
+	size 32
+}
+
+pointlight RailgunLight1
+{
+	color 25 25 255
+	size 24
+}
+
+pointlight RailgunLight2
+{
+	color 25 25 255
+	size 32
+}
+
+pointlight RailgunLight3
+{
+	color 25 25 255
+	size 24
+}
+
+pointlight RailgunLight4
+{
+	color 25 25 255
+	size 12
+}
+
+pointlight RailgunLight5
+{
+	color 25 25 255
+	size 8
+}
+
+pointlight ImpBallLight
+{
+	color 175 100 0
+	size 24
+}
+
+pointlight BarBallLight
+{
+	color 0 255 0
+	size 24
+}
+
+pointlight CacoBallLight
+{
+	color 200 0 75
+	size 24
+}
+
+pointlight RevSeekerLight
+{
+	color 175 100 0
+	size 12
+}
+
+object GrenadeCluster
+{
+	frame MISLB { light NadeClusterLight1 }
+	frame MISLC { light NadeClusterLight2 }
+}
+
+object ClusterProj
+{
+	frame MISLB { light NadeLight1 }
+	frame MISLC { light NadeLight2 }
+}
+
+object RailShotTrail
+{
+	frame PLSEA { light RailgunLight1 }
+	frame PLSEB { light RailgunLight2 }
+	frame PLSEC { light RailgunLight3 }
+	frame PLSED { light RailgunLight4 }
+	frame PLSEE { light RailgunLight5 }
+}
+
+object MMissile
+{
+	frame MISLA { light MMissileLight }
+	frame MISLB { light MMissileExplLight1 }
+	frame MISLC { light MMissileExplLight2 }	
+}
+
+object ImpDudeShot
+{
+	frame BAL1A { light ImpBallLight }
+	frame BAL1B { light ImpBallLight }
+	frame BAL1C { light ImpBallLight }
+	frame BAL1D { light ImpBallLight }
+}
+
+object BarBall
+{
+	frame BAL7A { light BarBallLight }
+	frame BAL7B { light BarBallLight }
+	frame BAL7C { light BarBallLight }
+	frame BAL7D { light BarBallLight }
+}
+
+object CacoShot
+{
+	frame BAL2A { light CacoBallLight}
+	frame BAL2B { light CacoBallLight}
+	frame BAL2C { light CacoBallLight}
+	frame BAL2D { light CacoBallLight}
+}
+
+object RevSeeker
+{
+	frame FATBA { light RevSeekerLight }
+	frame FATBB { light RevSeekerLight }
+	frame FBXPA { light RevSeekerLight }
+	frame FBXPb { light RevSeekerLight }
+}

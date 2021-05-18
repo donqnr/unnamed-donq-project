@@ -1,0 +1,17 @@
+- New Clusterfucker sprites w/ pickup sprite
+- New Mini-Missile Launcher sprites
+- Improved HUD probably
+- More pickups (Armors, health items, food, powerups)
+- Maps
+- GLDEFS
+- Credits
+- Improve weapons
+	- Plasma Cannon needs better, more fitting sprites
+	- Machine Pistol probably needs better sprites, also a new firing sound instead of re-using the one from the pistol
+	- Mini-Missile Launcher needs a more fitting sprite, maybe some balance tweaks
+	- Mini-Missile Launcher might be a bit overpowered, rework it when it starts appearing in maps
+- New Weapon(s)
+	- Revolver as a new starting weapon in later episodes, pistol gets replaced with the Machine Pistol
+- Special ammo tweaks
+	- Phosphorous grenades are pretty weak, replace or rework them
+	- Dragon's Breath and other fire weapons could set enemies on fire, dealing damage overtime. Not sure how to implement this yet though.

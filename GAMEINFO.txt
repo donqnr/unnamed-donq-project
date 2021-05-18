@@ -1,0 +1,2 @@
+STARTUPTITLE = "Unnamed Donq Project Prototype"
+STARTUPCOLORS = "3E0073","646464"
