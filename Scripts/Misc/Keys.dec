@@ -1,0 +1,12 @@
+ACTOR GreenCard : DoomKey
+{
+  Inventory.PickupMessage "Picked up a green keycard"
+  Inventory.Icon "QQKEYS1"
+  States
+  {
+  Spawn:
+    GKEY A 10
+    GKEY B 10 Bright
+    Loop
+  }
+}

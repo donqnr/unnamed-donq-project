@@ -1,2 +1,2 @@
-#INCLUDE "Scripts/Misc/Keys"
-#INCLUDE "Scripts/Misc/Trees"
+#INCLUDE "Scripts/Misc/Keys.dec"
+#INCLUDE "Scripts/Misc/Trees.dec"

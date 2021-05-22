@@ -1,11 +1,11 @@
-misc/w_pkup wppickup
-misc/i_pkup pickup
-ammopickup Sounds/misc/ammopickup
-heal Heal
-step1 step1
-step2 step2
-plrland plrland
-plrjump plrjump
+misc/w_pkup Sounds/misc/wppickup.wav
+misc/i_pkup Sounds/misc/pickup.wav
+ammopickup Sounds/misc/ammopickup.wav
+heal Sounds/misc/Heal.wav
+step1 Sounds/misc/step1.wav
+step2 Sounds/misc/step2.wav
+plrland Sounds/misc/plrland.wav
+plrjump Sounds/misc/plrjump.wav
 
 //Player Sounds
 $playersound	player	male	*land		plrland
@@ -20,157 +20,156 @@ AmmoSwitch Sounds/Weapons/AmmoSwitch
 $volume AmmoSwitch 0.5
 
 //Wrench
-WrenchHit1 Sounds/Weapons/Wrench/WrenchHit1
-WrenchHit2 Sounds/Weapons/Wrench/WrenchHit2
-WrenchHit3 Sounds/Weapons/Wrench/WrenchHit3
+WrenchHit1 Sounds/Weapons/Wrench/WrenchHit1.wav
+WrenchHit2 Sounds/Weapons/Wrench/WrenchHit2.wav
+WrenchHit3 Sounds/Weapons/Wrench/WrenchHit3.wav
 $random WrenchHit { WrenchHit1 WrenchHit2 WrenchHit3 }
-WrenchMiss1 Sounds/Weapons/Wrench/WrenchMiss1
-WrenchMiss2 Sounds/Weapons/Wrench/WrenchMiss2
+WrenchMiss1 Sounds/Weapons/Wrench/WrenchMiss1.wav
+WrenchMiss2 Sounds/Weapons/Wrench/WrenchMiss2.wav
 $random WrenchMiss { WrenchMiss1 WrenchMiss2 }
-WrenchHitWall1 Sounds/Weapons/Wrench/WrenchHitWall1
-WrenchHitWall2 Sounds/Weapons/Wrench/WrenchHitWall2
+WrenchHitWall1 Sounds/Weapons/Wrench/WrenchHitWall1.wav
+WrenchHitWall2 Sounds/Weapons/Wrench/WrenchHitWall2.wav
 $random WrenchHitWall { WrenchHitWall1 WrenchHitWall2 }
 
 //Shotgun
-ShotGunFire Sounds/Weapons/Shotgun/ShotGunFire
-ShotGunPump Sounds/Weapons/Shotgun/ShotGunPump
-DragonsBreathFire Sounds/Weapons/Shotgun/DragonsBreathFire
-DBImpact Sounds/Weapons/Shotgun/DBImpact
+ShotGunFire Sounds/Weapons/Shotgun/ShotGunFire.wav
+ShotGunPump Sounds/Weapons/Shotgun/ShotGunPump.wav
+DragonsBreathFire Sounds/Weapons/Shotgun/DragonsBreathFire.wav
+DBImpact Sounds/Weapons/Shotgun/DBImpact.lmp
 $volume DBImpact 0.5
 $volume ShotGunFire 0.4
 $volume ShotGunPump 0.5
 $volume DragonsBreathFire 0.5
 
 //Automatic Shotgun
-AutoSGFire Sounds/Weapons/AutoShotgun/AutoSGFire
+AutoSGFire Sounds/Weapons/AutoShotgun/AutoSGFire.wav
 $volume AutoSGFire 0.4
 
 //Machine Gun
-MGFire Sounds/Weapons/Machinegun/MGFIRE
+MGFire Sounds/Weapons/Machinegun/MGFIRE.wav
 $volume MGFire 0.6
 
 
 //Plasma Cannon
-PlasmaFire1 Sounds/Weapons/PlasmaCannon/PlasmaFire1
-PlasmaFire2 Sounds/Weapons/PlasmaCannon/PlasmaFire2
+PlasmaFire1 Sounds/Weapons/PlasmaCannon/PlasmaFire1.wav
+PlasmaFire2 Sounds/Weapons/PlasmaCannon/PlasmaFire2.wav
 $random PlasmaFire { PlasmaFire1 PlasmaFire2 }
 $volume PlasmaFire 0.75
 
-PlasmaImpact1 Sounds/Weapons/PlasmaCannon/PlasmaImpact1
-PlasmaImpact2 Sounds/Weapons/PlasmaCannon/PlasmaImpact2
-PlasmaImpact3 Sounds/Weapons/PlasmaCannon/PlasmaImpact3
-PlasmaImpact4 Sounds/Weapons/PlasmaCannon/PlasmaImpact4
-PlasmaImpact5 Sounds/Weapons/PlasmaCannon/PlasmaImpact5
+PlasmaImpact1 Sounds/Weapons/PlasmaCannon/PlasmaImpact1.wav
+PlasmaImpact2 Sounds/Weapons/PlasmaCannon/PlasmaImpact2.wav
+PlasmaImpact3 Sounds/Weapons/PlasmaCannon/PlasmaImpact3.wav
+PlasmaImpact4 Sounds/Weapons/PlasmaCannon/PlasmaImpact4.wav
+PlasmaImpact5 Sounds/Weapons/PlasmaCannon/PlasmaImpact5.wav
 $random PlasmaImpact { PlasmaImpact1 PlasmaImpact2 PlasmaImpact3 PlasmaImpact4 PlasmaImpact5 } 
 
 //Pistol
-PistolFire1 Sounds/Weapons/Pistol/PistolFire1
-PistolFire2 Sounds/Weapons/Pistol/PistolFire2
-PistolFire3 Sounds/Weapons/Pistol/PistolFire3
+PistolFire1 Sounds/Weapons/Pistol/PistolFire1.wav
+PistolFire2 Sounds/Weapons/Pistol/PistolFire2.wav
+PistolFire3 Sounds/Weapons/Pistol/PistolFire3.wav
 $random PistolFire { PistolFire1 PistolFire2 PistolFire3 }
 
 $volume PistolFire 0.5
 
 //Flamer
-FlamerFire Sounds/Weapons/Flamethrower/FlamerShot
-FlamerLoop Sounds/Weapons/Flamethrower/FlamerLoop
-FlamerIdle Sounds/Weapons/Flamethrower/FlamerIdle
-FlameSound Sounds/Weapons/Flamethrower/FlameSound
+FlamerFire Sounds/Weapons/Flamethrower/FlamerShot.wav
+FlamerLoop Sounds/Weapons/Flamethrower/FlamerLoop.wav
+FlamerIdle Sounds/Weapons/Flamethrower/FlamerIdle.wav
+FlameSound Sounds/Weapons/Flamethrower/FlameSound.wav
 
 //Missile Launcher
-MisslFire Sounds/Weapons/MiniMissileLauncher/MisslFire
+MisslFire Sounds/Weapons/MiniMissileLauncher/MisslFire.wav
 
 //Grenade Launcher
-NadeFire1 Sounds/Weapons/NadeLauncher/NadeFire1
-NadeFire2 Sounds/Weapons/NadeLauncher/NadeFire2
+NadeFire1 Sounds/Weapons/NadeLauncher/NadeFire1.wav
+NadeFire2 Sounds/Weapons/NadeLauncher/NadeFire2.wav
 $random NadeFire { NadeFire1 NadeFire2 }
-NadeReload1 Sounds/Weapons/NadeLauncher/NadeReload1
-NadeReload2 Sounds/Weapons/NadeLauncher/NadeReload2
-NadeReload3 Sounds/Weapons/NadeLauncher/NadeReload3
-NadeReload4 Sounds/Weapons/NadeLauncher/NadeReload4
-NadeBounce Sounds/Weapons/NadeLauncher/NadeBounce
+NadeReload1 Sounds/Weapons/NadeLauncher/NadeReload1.wav
+NadeReload2 Sounds/Weapons/NadeLauncher/NadeReload2.wav
+NadeReload3 Sounds/Weapons/NadeLauncher/NadeReload3.wav
+NadeReload4 Sounds/Weapons/NadeLauncher/NadeReload4.wav
+NadeBounce Sounds/Weapons/NadeLauncher/NadeBounce.wav
 
 //Minigun
-MinigunWindUp Sounds/Weapons/minigun/minigunwindup
-MinigunWindDown Sounds/Weapons/minigun/minigunwinddown
-MinigunFire Sounds/Weapons/minigun/minigunfire
-
+MinigunWindUp Sounds/Weapons/minigun/minigunwindup.wav
+MinigunWindDown Sounds/Weapons/minigun/minigunwinddown.wav
+MinigunFire Sounds/Weapons/minigun/minigunfire.wav
 $volume MinigunFire 0.5
 $volume MinigunWindUp 0.5
 $volume MinigunWindDown 0.5
 
 //SuperShotgun
-SSGFire Sounds/Weapons/SupaShotgun/SSGFire
-SSGReload1 Sounds/Weapons/SupaShotgun/SSGReload1
-SSGReload2 Sounds/Weapons/SupaShotgun/SSGReload2
-SSGReload3 Sounds/Weapons/SupaShotgun/SSGReload3
-SSGReload4 Sounds/Weapons/SupaShotgun/SSGReload4
+SSGFire Sounds/Weapons/SupaShotgun/SSGFire.wav
+SSGReload1 Sounds/Weapons/SupaShotgun/SSGReload1.wav
+SSGReload2 Sounds/Weapons/SupaShotgun/SSGReload2.wav
+SSGReload3 Sounds/Weapons/SupaShotgun/SSGReload3.wav
+SSGReload4 Sounds/Weapons/SupaShotgun/SSGReload4.wav
 
 $volume SSGFire 0.7
 
 //ClusterFucker
-CFCharge Sounds/Weapons/ClusterFucker/CFCharge
-CFFire Sounds/Weapons/ClusterFucker/CFFire
-CFExplode Sounds/Weapons/ClusterFucker/CFExplode
+CFCharge Sounds/Weapons/ClusterFucker/CFCharge.ogg
+CFFire Sounds/Weapons/ClusterFucker/CFFire.ogg
+CFExplode Sounds/Weapons/ClusterFucker/CFExplode.wav
 
 //Railgun
-RailGunFire Sounds/Weapons/RailGun/RailGunFire
+RailGunFire Sounds/Weapons/RailGun/RailGunFire.wav
 
 //Magnum
-MagnumFire1 Sounds/Weapons/Magnum/MagnumFire1
-MagnumFire2 Sounds/Weapons/Magnum/MagnumFire2
-MagnumFire3 Sounds/Weapons/Magnum/MagnumFire3
+MagnumFire1 Sounds/Weapons/Magnum/MagnumFire1.wav
+MagnumFire2 Sounds/Weapons/Magnum/MagnumFire2.wav
+MagnumFire3 Sounds/Weapons/Magnum/MagnumFire3.wav
 
 $random MagnumFire { MagnumFire1 MagnumFire2 MagnumFire3 }
 
 //Ricochets
-ric1 Sounds/misc/ric1
-ric2 Sounds/misc/ric2
-ric3 Sounds/misc/ric3
-ric4 Sounds/misc/ric4
-ric5 Sounds/misc/ric5
-ric6 Sounds/misc/ric6
-ric7 Sounds/misc/ric7
-ric8 Sounds/misc/ric8
-ric9 Sounds/misc/ric9
+ric1 Sounds/misc/ric1.wav
+ric2 Sounds/misc/ric2.wav
+ric3 Sounds/misc/ric3.wav
+ric4 Sounds/misc/ric4.wav
+ric5 Sounds/misc/ric5.wav
+ric6 Sounds/misc/ric6.wav
+ric7 Sounds/misc/ric7.wav
+ric8 Sounds/misc/ric8.wav
+ric9 Sounds/misc/ric9.wav
 
 $random ric { ric1 ric2 ric3 ric4 ric5 ric6 ric7 ric8 ric9 }
 
 $volume ric 0.75
 
 //Bullethits
-bullethit1 Sounds/misc/bullethit1
-bullethit2 Sounds/misc/bullethit2
+bullethit1 Sounds/misc/bullethit1.wav
+bullethit2 Sounds/misc/bullethit2.wav
 
 $random bullethit { bullethit1 bullethit2 }
 
 $volume bullethit 0.75
 
 
-WeaponClick Sounds/misc/WeaponClick
+WeaponClick Sounds/misc/WeaponClick.wav
 
 //Monsters
 
 //Cybruiser
-monster/brusit Sounds/Monsters/Cybruiser/dsbrusit
-monster/brudth Sounds/Monsters/Cybruiser/dsbrudth
-monster/bruwlk Sounds/Monsters/Cybruiser/dsbruwlk
-monster/brufir Sounds/Monsters/Cybruiser/dsbrufir
-weapons/hellex Sounds/Monsters/Cybruiser/dshellex
+monster/brusit Sounds/Monsters/Cybruiser/dsbrusit.ogg
+monster/brudth Sounds/Monsters/Cybruiser/dsbrudth.ogg
+monster/bruwlk Sounds/Monsters/Cybruiser/dsbruwlk.ogg
+monster/brufir Sounds/Monsters/Cybruiser/dsbrufir.ogg
+weapons/hellex Sounds/Monsters/Cybruiser/dshellex.ogg
 
 //Blood Demon
-blooddemon/sight DSBLDSIT
-blooddemon/pain DSBLDPAI
-blooddemon/death DSBLDDTH
-blooddemon/active DSBLDACT
-blooddemon/melee DSBLDATK
-blooddemon/walk DSBLDWAL
+blooddemon/sight Sounds/Monsters/BloodDemon/DSBLDSIT.wav
+blooddemon/pain Sounds/Monsters/BloodDemon/DSBLDPAI.wav
+blooddemon/death Sounds/Monsters/BloodDemon/DSBLDDTH.wav
+blooddemon/active Sounds/Monsters/BloodDemon/DSBLDACT.wav
+blooddemon/melee Sounds/Monsters/BloodDemon/DSBLDATK.wav
+blooddemon/walk Sounds/Monsters/BloodDemon/DSBLDWAL.wav
 
 //Aircraft thing
-flier/explosion EXPLOSIO
-lizard/laser    GBLASR01
-flyer/flying	COMMSP
+flier/explosion EXPLOSIO.lmp
+lizard/laser    GBLASR01.lmp
+flyer/flying	COMMSP.wav
 
 //Door sounds
-OpenDoor OPENDOOR
-SlidingDoor EDOOR
+OpenDoor OPENDOOR.voc
+SlidingDoor EDOOR.voc

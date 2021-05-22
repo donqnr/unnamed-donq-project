@@ -1,0 +1,105 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_DoomUDMF.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	DE1M5
+	{
+		defaultceiltexture = "F_SKY1";
+		overridefloorheight = false;
+		customfloorheight = 0;
+		uselongtexturenames = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 1;
+				location = "C:\\Users\\Aki\\Documents\\UnnamedDonqProject";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+			}
+		}
+		overrideceiltexture = false;
+		viewpositionx = -863.6129f;
+		defaulttoptexture = "STARTAN2";
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				lightceilingabsolute = 3;
+				yscaleceiling = 1;
+				xscalefloor = 1;
+				user_managed_3d_floor = 3;
+				xpanningfloor = 1;
+				lightcolor = 0;
+				xpanningceiling = 1;
+				xscaleceiling = 1;
+				yscalefloor = 1;
+				rotationfloor = 1;
+				fadecolor = 0;
+				rotationceiling = 1;
+				lightceiling = 0;
+				ypanningfloor = 1;
+				ypanningceiling = 1;
+			}
+			
+			sidedef
+			{
+				offsetx_top = 1;
+				scalex_top = 1;
+				scalex_mid = 1;
+				scalex_bottom = 1;
+				scaley_mid = 1;
+				scaley_bottom = 1;
+				offsety_top = 1;
+				scaley_top = 1;
+				offsety_bottom = 1;
+				offsetx_mid = 1;
+				offsety_mid = 1;
+				offsetx_bottom = 1;
+			}
+			
+			linedef
+			{
+				locknumber = 0;
+				alpha = 1;
+			}
+		}
+		overrideceilheight = false;
+		useresourcesinreadonlymode = false;
+		overridebrightness = false;
+		overridefloortexture = false;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0;
+			backscaley = 100;
+			gridrotate = 0;
+			backscalex = 100;
+			gridoriginx = 0;
+			gridsize = 8;
+			background = "";
+			backoffsety = 0;
+		}
+		overridetoptexture = false;
+		overridebottomtexture = false;
+		defaultbottomtexture = "STARTAN2";
+		defaultfloortexture = "FLAT20";
+		viewpositiony = -10099.46f;
+		defaultwalltexture = "STARTAN2";
+		customceilheight = 128;
+		overridemiddletexture = false;
+		custombrightness = 196;
+		viewscale = 3.211836f;
+	}
+}
