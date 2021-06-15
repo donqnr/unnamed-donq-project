@@ -61,6 +61,7 @@ Class DWeapon:Weapon abstract
 		Weapon.BobRangeX 0.8;
 		Weapon.BobRangeY 0.8;
 		Weapon.BobSpeed 1.2;
+		+Weapon.NoAutoaim;
 	}
 	
 	override void PostBeginPlay()
