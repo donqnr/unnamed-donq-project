@@ -12,7 +12,6 @@ Class Revenont:DMonster replaces Revenant
 		PainChance 100;
 		Monster;
 		MeleeThreshold 196;
-		+MISSILEMORE;
 		+FLOORCLIP;
 		DamageFactor "RevDmg", 0;
 		PainChance "RevDmg", 0;

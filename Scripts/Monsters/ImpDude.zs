@@ -1,4 +1,4 @@
-//The Imp is now faster and fires three fireballs in quick succession.
+//The Imp is now faster
 
 Class ImpDude:DMonster replaces DoomImp
 {
@@ -8,7 +8,7 @@ Class ImpDude:DMonster replaces DoomImp
 		Radius 20;
 		Height 56;
 		Mass 100;
-		Speed 8;
+		Speed 10;
 		PainChance 200;
 		Monster;
 		+FLOORCLIP;
@@ -34,12 +34,8 @@ Class ImpDude:DMonster replaces DoomImp
 	Missile:
 //		TRO4 E 0 A_Jump(120, "Missile2");
 		TRO4 E 0 A_CheckRange(2048,"See");
-		TRO4 EF 4 A_FaceTarget;
-		TRO4 G 3 A_SpawnProjectile("ImpDudeShot", 33.0, 9, random(1,-1),CMF_OFFSETPITCH,random(1,-1));
-		TRO4 EF 2 A_FaceTarget;
+		TRO4 EF 3 A_FaceTarget;
 		TRO4 G 2 A_SpawnProjectile("ImpDudeShot", 33.0, 9, random(1,-1),CMF_OFFSETPITCH,random(1,-1));
-		TRO4 EF 2 A_FaceTarget;
-		TRO4 G 2 A_SpawnProjectile("ImpDudeShot", 33.0, 9, random(1,-0),CMF_OFFSETPITCH,random(1,-1));
 		Goto See;
 	Missile2:
 		TRO4 EF 8 A_FaceTarget;
