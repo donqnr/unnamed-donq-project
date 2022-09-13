@@ -2,12 +2,12 @@ Class DCacodemon : DMonster replaces Cacodemon
 {
 	Default 
 	{
-		Health 300;
+		Health 500;
 		Radius 25;
-		Height 45;
+		Height 50;
 		Mass 300;
 		Speed 3;
-		scale 0.75;
+		scale 0.85;
 		PainChance 128;
 		BloodColor "blue";
 		DMonster.BludColor 1;
@@ -32,8 +32,8 @@ Class DCacodemon : DMonster replaces Cacodemon
 		HEAD A 1 A_Chase;
 		Loop;
 	Missile:
-		HEAD BC 3 A_FaceTarget;
-		HEAD D 3 Bright A_SpawnProjectile("CacoShot", 20.0, 0, 0,CMF_OFFSETPITCH,0);
+		HEAD BC 4 A_FaceTarget;
+		HEAD D 4 Bright A_SpawnProjectile("CacoShot", 20.0, 0, 0,CMF_OFFSETPITCH,0);
 		Goto See;
 	Pain:
 		HEAD E 3;
