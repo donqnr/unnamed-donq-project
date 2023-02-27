@@ -256,6 +256,13 @@ map DE1M6 "Super Cyberdemon"
 	sky1 = "AAASKY", 0
 	next = endsequence, "ep1end"
 }
+map DE1M3RE "Waste Processing (WIP Revamp)"
+{
+	sky1 = "AAASKY", 0
+	next = "DE1M4"23.17 27.2.2023
+	music = "MILITARY"
+}
+
 
 //Episode 2
 
