@@ -13,3 +13,6 @@ The mod is intended to be run with Doom II, Freedoom will work but the visuals m
 To play, drag the project folder or the .pk3 file over the gzdoom.exe file
 
 Still very much work-in-progress.
+
+![screenshot](https://i.imgur.com/aqiorgM.png)
+![screenshot](https://i.imgur.com/4cjGMWi.png)
